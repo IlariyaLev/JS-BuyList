@@ -136,19 +136,24 @@ margin: auto;
 
 .button-sell{
 
-    width:	130px;
+    width:	70%;
     padding:	10px;
     background: #f1f1f1;
     color: black;
     font-size: larger;
     float: left;
+    border-radius: 10px;
 }
-.button-x{
 
-    width:	20px;
+
+.button-x{
+/* how to make button square?*/
+    width:	30%;
     float:	right;
     padding:	10px;
     background: red;
     color: white;
     font-size: larger;
+    border-radius: 10px;
+    position: relative;
 }
