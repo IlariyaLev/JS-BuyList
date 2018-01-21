@@ -1,8 +1,62 @@
-h1 {
-    color: red;
+body{
+    background-color: #DADADA;
+    margin: 0;
+    height: 100%;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
+.main{
+    width: auto;
+    margin:30px;
+    background: blue;
 }
+
+.left{
+    width:	70%;
+    float:left;
+    height: 100%;
+    background: green;
+
+}
+.right{
+    width:	30%;
+    float:right;
+    height: 100%;
+    background: greenyellow;
+
+}
+
+.part{
+    height: 100%;
+    background: white;
+    border-radius: 7px;
+    padding:	10px;
+    margin: 7px;
+}
+
+.line{
+    background: yellow;
+    height: 100%;
+    padding:	10px;
+}
+
+.add{
+    border-radius: 7px;
+    background:	red;
+    max-width:	700px;
+}
+.enter-name{
+    border: grey 1px solid;
+    background: orange;
+    padding:	10px;
+    width:	70%;
+    float:left;
+
+}
+.button{
+    width:	10%;
+float:	right;
+    padding:	10px;
+    background: #67afff;
+    color: white;
+}
+
