@@ -9,7 +9,7 @@ body{
 .main{
     width: auto;
     margin:1%;
-    margin-top: 10%;
+    margin-top: 10px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -18,6 +18,8 @@ body{
     width:	62%;
     float:left;
     height: 100%;
+    max-width:	1000px;
+    min-width: 513px;
 
 }
 .right{
@@ -37,25 +39,41 @@ body{
 
 .line{
     /*how to make lines between goods? */
-    background: white;
+    border-bottom: grey solid 0.5px;
     height: 100%;
     padding:	10px;
 
 
+
 }
+
+.clearfix::after	{
+    visibility:	hidden;
+display:	block;
+    content:	"";	 /*Порожнім*/
+height:	0;	 /*Без висоти*/
+clear:	both;	/*clear	забороняє обтікати (float) цей елемент з обох сторін*/
+}
+
+.line:last-child{
+    border-bottom: 0px;
+}
+
 .good{
+
     border-radius: 7px;
     width:	100%;
     margin:	auto;
-    max-width:	700px;
+
 }
 
 .add{
     border-radius: 7px;
-    background:	red;
+    background:	white;
     width:	100%;
     margin:	auto;
     max-width:	700px;
+    border: 0px;
 }
 .enter-name{
     border: grey 1px solid;
@@ -63,17 +81,21 @@ body{
     background: white;
     padding:	10px;
     height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 129px;
 }
 .button{
-    /* cannot make enter name place + button be one size
-     also have problem making round borders only one the left of enter space
-     and on the right of button */
+
     width:	130px;
     float:	right;
     padding:	10px;
     background: #67afff;
     color: white;
     font-size: 16px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-width: 0.5px ;
 }
 .name{
     float: left;
@@ -82,6 +104,7 @@ body{
     height: 100%;
     width: 30%;
     font-size: 18px;
+
 
 
 }
@@ -109,20 +132,20 @@ body{
     /* when i make screen bigger,
     button in the last line go to the next and create extra white space but not whole line
      just around button, how to fix it?*/
+    border: 0px;
 }
 .box{
 
 }
 
 .round{
-    /* how to make + - 1 not only centered by width but also by hight*/
     border-radius: 50%;
     height: 30px;
     width: 30px;
     text-align: center;
     display: inline-block;
-    box-shadow: grey;
 
+    border-width: 0.5px ;
 }
 
 .minus{
@@ -133,13 +156,15 @@ body{
 .plus{
     background: #00d100;
     float:right;
+
 }
 
 .number{
     border-radius: 10%;
     text-align: center;
-    height: 30px;
+    height: 24px;
     width: 30px;
+    padding-top:6px;
     background: #DADADA;
     display: inline-block;
 }
@@ -153,25 +178,32 @@ body{
     font-size:  16px;
     float: left;
     border-radius: 10px;
+    border-width: 0.5px ;
 }
 
 
 .button-x{
 /* how to make button square?*/
-    width:	30%;
+
+    height: 35px;
+    width: 35px;
+    text-align: center;
     float:	right;
-    padding:	10px;
+    margin: auto;
+    margin-top: 2px;
     background: red;
     color: white;
     font-size: larger;
     border-radius: 10px;
     position: relative;
+    border-width: 0.5px ;
 }
 .status{
    font-size: 21px;
 }
 
 .quantity{
+    padding-top: 10px;
     display: inline;
 }
 
@@ -186,6 +218,7 @@ body{
 
 .product-name{
     float: left;
+
 }
 
 .product-number{
