@@ -10,23 +10,38 @@ body{
     width: auto;
     margin:1%;
     margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .left{
     width:	62%;
     float:left;
     height: 100%;
-    max-width:	1000px;
-    min-width: 513px;
+    max-width:	800px;
+    margin-right: 1%;
+    min-width: 500px;
 
 }
 .right{
     width:	34%;
     float:right;
     height: 100%;
+    margin-left:1%;
 
+}
+
+@media(max-width: 870px){
+    .left{
+        width:100%;
+        float:none;
+    }
+
+    .right{
+        margin-top: 10px;
+        width:100%;
+        float:none;
+    }
 }
 
 .part{
@@ -49,11 +64,12 @@ body{
 
 .clearfix::after	{
     visibility:	hidden;
-display:	block;
+    display:	block;
     content:	"";	 /*Порожнім*/
-height:	0;	 /*Без висоти*/
-clear:	both;	/*clear	забороняє обтікати (float) цей елемент з обох сторін*/
+    height:	0;	 /*Без висоти*/
+    clear:	both;	/*clear	забороняє обтікати (float) цей елемент з обох сторін*/
 }
+
 
 .line:last-child{
     border-bottom: 0px;
@@ -74,6 +90,7 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     margin:	auto;
     max-width:	700px;
     border: 0px;
+    padding-bottom: 10px;
 }
 .enter-name{
     border: grey 1px solid;
@@ -96,6 +113,30 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-width: 0.5px ;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+.button::after{
+    content: attr(data-tooltip);
+    display:block;
+    position: absolute;
+
+    top:-23px;
+    left: 50%;
+
+    margin-left:-50px;
+
+    width: 100px;
+    height:30px;
+
+    padding: 3px;
+    box-sizing: border-box;
+
+    background: blueviolet;
+    color:white;
+
 }
 .name{
     float: left;
@@ -104,8 +145,7 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     height: 100%;
     width: 30%;
     font-size: 18px;
-
-
+    padding-top: 18px;
 
 }
 
@@ -115,8 +155,6 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     padding:	10px;
     height: 100%;
     alignment: center;
-    /*when I make screen smaller this line goes to the next line,
-     when name of the product staty on the same line*/
 
 }
 
@@ -126,12 +164,7 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     background: white;
     padding:	10px;
     height: 80%;
-/* how to make it smaller? make height 80% doesn't work*/
-    /*how to make space between buttons? */
     width: 30%;
-    /* when i make screen bigger,
-    button in the last line go to the next and create extra white space but not whole line
-     just around button, how to fix it?*/
     border: 0px;
 }
 .box{
@@ -183,7 +216,6 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
 
 
 .button-x{
-/* how to make button square?*/
 
     height: 35px;
     width: 35px;
@@ -203,8 +235,7 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
 }
 
 .quantity{
-    padding-top: 10px;
-    display: inline;
+
 }
 
 .product{
@@ -214,7 +245,6 @@ clear:	both;	/*clear	забороняє обтікати (float) цей елем
     padding: 2%;
     font-size: 11px;
 }
-/* how to make space between name of the product and the number?*/
 
 .product-name{
     float: left;
@@ -231,4 +261,60 @@ border-radius: 50%;
     width: 15px;
     box-shadow: grey;
 
+}
+
+.badge{
+background: darkviolet;
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+    color: white;
+    padding: 5px;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    transition:all 3000ms ease;
+    transform: translateY(70px);
+}
+
+.badge:hover{
+    background: #5f2fff;
+    transform: translateY(0px);
+}
+
+@media print{
+    .badge{
+        color: black;
+        background: white;
+        border: 2px solid black;
+        height: 70px;
+
+
+    }
+
+    .subtitle{
+        display:none;
+    }
+}
+
+.title{
+    color: white;
+    font-size: 24px;
+
+    padding-bottom: 20px;
+}
+
+.subtitle{
+    color: white;
+    font-size: 12px;
+}
+
+.made-by{
+    color: white;
+    font-size: 18px;
 }
