@@ -269,7 +269,7 @@ background: darkviolet;
     right: 50px;
     bottom: 0px;
     width: 100px;
-    height: 100px;
+    height: 110px;
 
     text-align: center;
     color: white;
@@ -288,6 +288,8 @@ background: darkviolet;
 }
 
 @media print{
+
+    /*cant make it print, dont being seen*/
     .badge{
         color: black;
         background: white;
@@ -316,5 +318,5 @@ background: darkviolet;
 
 .made-by{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
