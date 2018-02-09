@@ -137,6 +137,17 @@ body{
     background: blueviolet;
     color:white;
 
+    transform: scale(0);
+
+    font-size: 8px;
+
+    transition:all 300ms ease;
+
+}
+
+.button:hover::after{
+    transform: scale(1);
+
 }
 .name{
     float: left;
@@ -295,7 +306,7 @@ background: darkviolet;
         background: white;
         border: 2px solid black;
         height: 70px;
-
+        transform: translateY(0px);
 
     }
 
