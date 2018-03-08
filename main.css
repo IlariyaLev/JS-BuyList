@@ -61,6 +61,15 @@ body{
 
 
 }
+.top{
+    border-bottom: grey solid 0.5px;
+    height: 100%;
+    padding:	10px;
+
+
+
+
+}
 
 .clearfix::after	{
     visibility:	hidden;
@@ -75,7 +84,7 @@ body{
     border-bottom: 0px;
 }
 
-.good{
+.buy-block{
 
     border-radius: 7px;
     width:	100%;
@@ -83,15 +92,30 @@ body{
 
 }
 
-.add{
-    border-radius: 7px;
-    background:	white;
-    width:	100%;
-    margin:	auto;
-    max-width:	700px;
-    border: 0px;
-    padding-bottom: 10px;
+.buy-block.unbought .edit-title{
+    display: none;
 }
+
+.buy-block.unbought .unbuy{
+    display: none;
+}
+
+.buy-block.bought .edit-title{
+    display: none;
+}
+
+.buy-block.bought .buy{
+    display: none;
+}
+
+.buy-block.bought .plus{
+    display: none;
+}
+
+.buy-block.bought .minus{
+    display: none;
+}
+
 .enter-name{
     border: grey 1px solid;
     color: grey;
@@ -100,7 +124,9 @@ body{
     height: 100%;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-    margin-right: 129px;
+    alignment: left;
+    margin-right: 130px;
+
 }
 .button{
 
@@ -149,7 +175,7 @@ body{
     transform: scale(1);
 
 }
-.name{
+.title{
     float: left;
     background: white;
     padding:	10px;
@@ -213,7 +239,19 @@ body{
     display: inline-block;
 }
 
-.button-sell{
+.buy{
+
+    width:	70%;
+    padding:	10px;
+    background: #f1f1f1;
+    color: black;
+    font-size:  16px;
+    float: left;
+    border-radius: 10px;
+    border-width: 0.5px ;
+}
+
+.unbuy{
 
     width:	70%;
     padding:	10px;
@@ -226,7 +264,7 @@ body{
 }
 
 
-.button-x{
+.delete{
 
     height: 35px;
     width: 35px;
@@ -310,24 +348,24 @@ background: darkviolet;
 
     }
 
-    .subtitle{
+    .Bsubtitle{
         display:none;
     }
 }
 
-.title{
+.Btitle{
     color: white;
     font-size: 24px;
 
     padding-bottom: 20px;
 }
 
-.subtitle{
+.Bsubtitle{
     color: white;
     font-size: 12px;
 }
 
-.made-by{
+.Bmade-by{
     color: white;
     font-size: 16px;
 }

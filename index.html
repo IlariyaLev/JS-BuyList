@@ -5,158 +5,82 @@
     <title>Buy List</title>
 
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
 
 
-<div	class="main">
+<div class="main">
+
+
     <div class="left">
         <div class="part">
-            <div class="line">
-                <div class="add">
-                    <button class="button" data-tooltip="Add new good">
-                        Додати
-                    </button>
-                    <div class="enter-name">
-                        Назва товару
-                    </div>
-
-                </div>
-            </div>
-            <div class="line clearfix">
-                <div class="good clearfix">
-                <div class="name">
-                      помідори
-                </div>
-                <div class="buttons-to-buy">
-                    <button class="button-sell">
-                        Куплено
-                    </button>
-                    <button class="button-x">
-                        x
-                    </button>
-                </div>
-                <div class="number-of-goods">
-                    <button class="round minus">
-                        -
-                    </button>
-
-                    <button class="round plus">
-                        +
-                    </button>
-                    <div class="number">
-                        1
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="line clearfix">
-                <div class="good clearfix">
-                <div class="name">
-                    печиво
-                </div>
-                <div class="number-of-goods">
-                    <button class="round minus">
-                        -
-                    </button>
-
-                    <button class="round plus">
-                        +
-                    </button>
-                    <div class="number">
-                        1
-                    </div>
-                </div>
-                <div class="buttons-to-buy">
-                    <button class="button-sell">
-                        Куплено
-                    </button>
-                    <button class="button-x">
-                        x
-                    </button>
-                </div>
-            </div>
-            </div>
-
-            <div class="line clearfix">
-                <div class="good clearfix">
-                <div class="name">
-                    сир
-                </div>
-                <div class="number-of-goods">
-                    <button class="round minus">
-                        -
-                    </button>
-
-                    <button class="round plus">
-                        +
-                    </button>
-                    <div class="number">
-                        1
-                    </div>
-                </div>
-                <div class="buttons-to-buy">
-                    <button class="button-sell">
-                        Куплено
-                    </button>
-                    <button class="button-x">
-                        x
-                    </button>
-                </div>
-                </div>
+            <div class="top">
+                <button class="button" data-tooltip="Add new good">Додати</button>
+                <input class="enter-name" type="text" placeholder="Назва товару">
             </div>
         </div>
-
     </div>
+
+
     <div class="right">
         <div class="part">
-            <div class="line status">
-                Залишилося
-            </div>
+            <div class="line status">Залишилося</div>
             <div class="line quantity clearfix">
-                <div class="product">
-                    <div class="product-name">
-                        Печиво
-                    </div>
-                    <div class="product-number">
-                        1
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-name">
-                        Сир
-                    </div>
-                    <div class="product-number">
-                        1
-                    </div>
+                <div class="list-not-bought">
 
                 </div>
-                <div class="product">
-                    <div class="product-name">
-                        Помідори
-                    </div>
-                    <div class="product-number">
-                        1
-                    </div>
-
-                </div>
-
             </div>
-            <div class="line status">
-                Куплено
-            </div>
+            <div class="line status">Куплено</div>
             <div class="line quantity">
+                <div class="list-bought">
 
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="badge">
-    <div class="title">Buy List</div>
-    <div class="subtitle">Created by:</div>
-    <div class="made-by">Ilariya Levchenko</div>
-    <div class="made-by"></div>
+    <div class="Btitle">Buy List</div>
+    <div class="Bsubtitle">Created by:</div>
+    <div class="Bmade-by">Ilariya Levchenko</div>
+    <div class="Bmade-by"></div>
 </div>
+
+
+<div class="template" style="display: none">
+    <div class="line clearfix">
+        <div class="buy-block unbought">
+            <span class="title">Title</span>
+            <input class="edit-title" value="Title"/>
+            <div class="number-of-goods">
+                <button class="round plus">+</button>
+                <span class="quantity">0</span>
+                <button class="round minus">-</button>
+            </div>
+            <div class="buttons-to-buy">
+                <button class="buy">Buy</button>
+                <button class="unbuy">Unbuy</button>
+                <button class="delete">x</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="right-template" style="display: none">
+    <div class="product">
+        <div class="product-name">
+            <span>Title</span>
+        </div>
+        <div class="product-number">
+            <span>1</span>
+        </div>
+    </div>
+</div>
+
+<script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="D:\Documents\GitHub\JS-BuyList\main.js"></script>
+
 </body>
 </html>
