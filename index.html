@@ -11,14 +11,13 @@
 
 
 <div class="main">
-
-
     <div class="left">
         <div class="part">
             <div class="top">
-                <button class="button" data-tooltip="Add new good">Додати</button>
+                <button class="button" data-tooltip="Add new good">Add</button>
                 <input class="enter-name" type="text" placeholder="Назва товару">
             </div>
+
         </div>
     </div>
 
@@ -49,25 +48,6 @@
 </div>
 
 
-<div class="template" style="display: none">
-    <div class="line clearfix">
-        <div class="buy-block unbought">
-            <span class="title">Title</span>
-            <input class="edit-title" value="Title"/>
-            <div class="number-of-goods">
-                <button class="round plus">+</button>
-                <span class="quantity">0</span>
-                <button class="round minus">-</button>
-            </div>
-            <div class="buttons-to-buy">
-                <button class="buy">Buy</button>
-                <button class="unbuy">Unbuy</button>
-                <button class="delete">x</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="right-template" style="display: none">
     <div class="product">
         <div class="product-name">
@@ -79,8 +59,32 @@
     </div>
 </div>
 
-<script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="D:\Documents\GitHub\JS-BuyList\main.js"></script>
+
+<div class="template" style="display: none">
+    <div class="line clearfix">
+        <div class="good clearfix">
+            <div class="buy-block unbought">
+                <div class="title">Title</div>
+                <div class="crossedTitle" style="display: none">CrossedTitle</div>
+                <input class="edit-title" value="Title"/>
+                <div class="number-of-goods">
+                    <button class="round plus">+</button>
+                    <span class="number">0</span>
+                    <button class="round minus">-</button>
+                </div>
+                <div class="buttons-to-buy">
+                    <button class="buy">Buy</button>
+                    <button class="unbuy">Unbuy</button>
+                    <button class="delete">x</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
